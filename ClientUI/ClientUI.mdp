@@ -1,0 +1,53 @@
+<Project name="ClientUI" fileversion="2.0" language="C#" ctype="DotNetProject">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="./bin/Debug" assembly="ClientUI" />
+      <Build debugmode="True" target="Exe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="True" generateoverflowchecks="True" mainclass="IrisIM.UI.ClientUI" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="./bin/Release" assembly="ClientUI" />
+      <Build debugmode="False" target="Exe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <DeploymentInformation strategy="File">
+    <excludeFiles />
+  </DeploymentInformation>
+  <Contents>
+    <File name="./UIBase.cs" subtype="Code" buildaction="Compile" />
+    <File name="./ClientUI.cs" subtype="Code" buildaction="Compile" />
+    <File name="../GladeUI/irisim.glade" subtype="Code" buildaction="Compile" />
+    <File name="./GladeUI" subtype="Directory" buildaction="Compile" />
+    <File name="./GladeUI/irisim.glade" subtype="Code" buildaction="Nothing" />
+    <File name="./irisim.glade" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="./Connections.cs" subtype="Code" buildaction="Compile" />
+    <File name="./DataHolders" subtype="Directory" buildaction="Compile" />
+    <File name="./DataHolders/Connection.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Connections" subtype="Directory" buildaction="Compile" />
+    <File name="./Connections/AddConnection.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Error.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Exceptions" subtype="Directory" buildaction="Compile" />
+    <File name="./Exceptions/OutOfRangeException.cs" subtype="Code" buildaction="Compile" />
+    <File name="./DataHolders/ConnectionCollection.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Exceptions/KeyExistsException.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Exceptions/UIException.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Exceptions/NotFoundException.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Connections/EditConnection.cs" subtype="Code" buildaction="Compile" />
+    <File name="./DataHolders/Account.cs" subtype="Code" buildaction="Compile" />
+    <File name="./DataHolders/AccountCollection.cs" subtype="Code" buildaction="Compile" />
+    <File name="./ClientUI.exe.config" subtype="Code" buildaction="Compile" />
+    <File name="./ConnectionStatus.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UserChat.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="glade-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="gtk-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Project" localcopy="True" refto="Client" />
+    <ProjectReference type="Gac" localcopy="True" refto="gtk-dotnet, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Project" localcopy="True" refto="Utilities" />
+  </References>
+</Project>

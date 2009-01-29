@@ -1,0 +1,16 @@
+<Combine name="UserChat" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry configuration="Debug" build="True" name="UserChat" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry configuration="Debug" build="True" name="UserChat" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="UserChat" single="True">
+    <Execute type="None" entry="UserChat" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./UserChat.mdp" />
+  </Entries>
+</Combine>

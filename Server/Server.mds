@@ -1,0 +1,16 @@
+<Combine name="Server" fileversion="2.0">
+  <Configurations>
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Server" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Server" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Server" single="True">
+    <Execute type="None" entry="Server" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./Server.mdp" />
+  </Entries>
+</Combine>

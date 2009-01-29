@@ -1,0 +1,16 @@
+<Combine name="UserManager" fileversion="2.0">
+  <Configurations>
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="UserManager" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="UserManager" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="UserManager" single="True">
+    <Execute type="None" entry="UserManager" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./UserManager.mdp" />
+  </Entries>
+</Combine>

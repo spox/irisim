@@ -1,0 +1,36 @@
+<Combine name="IrisIM" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Server" configuration="Debug" />
+      <Entry build="True" name="Utilities" configuration="Debug" />
+      <Entry build="True" name="ServerPlugins" configuration="Debug" />
+      <Entry build="True" name="Client" configuration="Debug" />
+      <Entry build="True" name="ClientUI" configuration="Debug" />
+      <Entry build="True" name="ClientPlugins" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Server" configuration="Release" />
+      <Entry build="True" name="Utilities" configuration="Release" />
+      <Entry build="True" name="ServerPlugins" configuration="Release" />
+      <Entry build="True" name="Client" configuration="Debug" />
+      <Entry build="True" name="ClientUI" configuration="Debug" />
+      <Entry build="True" name="ClientPlugins" configuration="Debug" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Server" single="True">
+    <Execute type="None" entry="Server" />
+    <Execute type="None" entry="Utilities" />
+    <Execute type="None" entry="ServerPlugins" />
+    <Execute type="None" entry="Client" />
+    <Execute type="None" entry="ClientUI" />
+    <Execute type="None" entry="ClientPlugins" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./Server/Server.mdp" />
+    <Entry filename="./Utilities/Utilities.mdp" />
+    <Entry filename="./ServerPlugins/ServerPlugins.mds" />
+    <Entry filename="./Client/Client.mdp" />
+    <Entry filename="./ClientUI/ClientUI.mdp" />
+    <Entry filename="./ClientPlugins/ClientPlugins.mds" />
+  </Entries>
+</Combine>

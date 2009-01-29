@@ -1,0 +1,16 @@
+<Combine name="Cryptor" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry configuration="Debug" build="True" name="Cryptor" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry configuration="Debug" build="True" name="Cryptor" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Cryptor" single="True">
+    <Execute type="None" entry="Cryptor" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./Cryptor.mdp" />
+  </Entries>
+</Combine>

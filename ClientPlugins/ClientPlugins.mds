@@ -1,0 +1,36 @@
+<Combine name="ClientPlugins" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Lagger" configuration="Debug" />
+      <Entry build="True" name="Connector" configuration="Debug" />
+      <Entry build="True" name="Messenger" configuration="Debug" />
+      <Entry build="True" name="Statusor" configuration="Debug" />
+      <Entry build="True" name="Relater" configuration="Debug" />
+      <Entry build="True" name="Cryptor" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Lagger" configuration="Debug" />
+      <Entry build="True" name="Connector" configuration="Debug" />
+      <Entry build="True" name="Messenger" configuration="Debug" />
+      <Entry build="True" name="Statusor" configuration="Debug" />
+      <Entry build="True" name="Relater" configuration="Debug" />
+      <Entry build="True" name="Cryptor" configuration="Debug" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="ClientPlugins" single="True">
+    <Execute type="None" entry="Lagger" />
+    <Execute type="None" entry="Connector" />
+    <Execute type="None" entry="Messenger" />
+    <Execute type="None" entry="Statusor" />
+    <Execute type="None" entry="Relater" />
+    <Execute type="None" entry="Cryptor" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./Lagger/Lagger.mdp" />
+    <Entry filename="./Connector/Connector.mdp" />
+    <Entry filename="./Messenger/Messenger.mdp" />
+    <Entry filename="./Statusor/Statusor.mdp" />
+    <Entry filename="./Relater/Relater.mdp" />
+    <Entry filename="./Cryptor/Cryptor.mdp" />
+  </Entries>
+</Combine>

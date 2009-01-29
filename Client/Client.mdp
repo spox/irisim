@@ -1,0 +1,34 @@
+<Project name="Client" fileversion="2.0" language="C#" ctype="DotNetProject">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="./bin/Debug" assembly="Client" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="./bin/Release" assembly="Client" />
+      <Build debugmode="False" target="Exe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <DeploymentInformation strategy="File">
+    <excludeFiles />
+  </DeploymentInformation>
+  <Contents>
+    <File name="./Controller.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Events" subtype="Directory" buildaction="Compile" />
+    <File name="./Events/ClientEvent.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Events/UIEvent.cs" subtype="Code" buildaction="Compile" />
+    <File name="./ClientPlugin.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Messages" subtype="Directory" buildaction="Compile" />
+    <File name="./Messages/Informessage.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Messages/ClientMessage.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Messages/UIMessage.cs" subtype="Code" buildaction="Compile" />
+    <File name="./ClientMessagePump.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Project" localcopy="True" refto="Utilities" />
+  </References>
+</Project>

@@ -1,0 +1,16 @@
+<Combine name="Messenger" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry configuration="Debug" build="True" name="Messenger" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry configuration="Debug" build="True" name="Messenger" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Messenger" single="True">
+    <Execute type="None" entry="Messenger" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./Messenger.mdp" />
+  </Entries>
+</Combine>

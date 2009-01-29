@@ -1,0 +1,16 @@
+<Combine name="Greeter" fileversion="2.0">
+  <Configurations>
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Greeter" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Greeter" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Greeter" single="True">
+    <Execute type="None" entry="Greeter" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./Greeter.mdp" />
+  </Entries>
+</Combine>

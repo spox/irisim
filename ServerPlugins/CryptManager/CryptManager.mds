@@ -1,0 +1,16 @@
+<Combine name="CryptManager" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry configuration="Debug" build="True" name="CryptManager" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry configuration="Debug" build="True" name="CryptManager" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="CryptManager" single="True">
+    <Execute type="None" entry="CryptManager" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./CryptManager.mdp" />
+  </Entries>
+</Combine>

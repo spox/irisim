@@ -1,0 +1,28 @@
+<Combine name="ServerPlugins" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Greeter" configuration="Debug" />
+      <Entry build="True" name="UserManager" configuration="Debug" />
+      <Entry build="True" name="CryptManager" configuration="Debug" />
+      <Entry build="True" name="UserChat" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Greeter" configuration="Release" />
+      <Entry build="True" name="UserManager" configuration="Release" />
+      <Entry build="True" name="CryptManager" configuration="Debug" />
+      <Entry build="True" name="UserChat" configuration="Debug" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Greeter" single="True">
+    <Execute type="None" entry="Greeter" />
+    <Execute type="None" entry="UserManager" />
+    <Execute type="None" entry="CryptManager" />
+    <Execute type="None" entry="UserChat" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./Greeter/Greeter.mdp" />
+    <Entry filename="./UserManager/UserManager.mdp" />
+    <Entry filename="./CryptManager/CryptManager.mdp" />
+    <Entry filename="./UserChat/UserChat.mdp" />
+  </Entries>
+</Combine>
