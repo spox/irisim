@@ -1,7 +1,7 @@
 using System.Xml;
 using IrisIM.Client;
 using IrisIM.Utilities;
-
+using System.Windows.Forms;
 namespace IrisIM
 {
 	namespace UI
@@ -11,7 +11,7 @@ namespace IrisIM
 			public static void Main(string[] args)
 			{
 				Logger.loudness = Logger.Verbosity.moderate;
-				new UIBase();
+				System.Windows.Forms.Application.Run(new FormBase());
 			}
 		}
 	}
