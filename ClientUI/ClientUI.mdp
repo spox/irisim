@@ -16,10 +16,6 @@
   <Contents>
     <File name="UIBase.cs" subtype="Code" buildaction="Nothing" />
     <File name="ClientUI.cs" subtype="Code" buildaction="Compile" />
-    <File name="../GladeUI/irisim.glade" subtype="Code" buildaction="Nothing" />
-    <File name="GladeUI" subtype="Directory" buildaction="Nothing" />
-    <File name="GladeUI/irisim.glade" subtype="Code" buildaction="Nothing" />
-    <File name="irisim.glade" subtype="Code" buildaction="EmbedAsResource" />
     <File name="Connections.cs" subtype="Code" buildaction="Nothing" />
     <File name="DataHolders" subtype="Directory" buildaction="Nothing" />
     <File name="DataHolders/Connection.cs" subtype="Code" buildaction="Nothing" />
@@ -39,12 +35,17 @@
     <File name="ConnectionStatus.cs" subtype="Code" buildaction="Nothing" />
     <File name="UserChat.cs" subtype="Code" buildaction="Nothing" />
     <File name="FormBase.cs" subtype="Code" buildaction="Compile" />
+    <File name="sqlitelib" subtype="Directory" buildaction="Compile" />
+    <File name="sqlitelib/System.Data.SQLite.XML" subtype="Code" buildaction="Nothing" />
+    <File name="sqlitelib/System.Data.SQLite.dll" subtype="Code" buildaction="Nothing" />
   </Contents>
   <References>
     <ProjectReference type="Project" localcopy="True" refto="Client" />
     <ProjectReference type="Project" localcopy="True" refto="Utilities" />
     <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     <ProjectReference type="Gac" localcopy="True" refto="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Assembly" localcopy="True" refto="sqlitelib/System.Data.SQLite.dll" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   </References>
   <DeploymentInformation strategy="File">
     <excludeFiles />

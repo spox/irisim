@@ -26,11 +26,11 @@
     <Execute type="None" entry="Cryptor" />
   </StartMode>
   <Entries>
-    <Entry filename="./Lagger/Lagger.mdp" />
-    <Entry filename="./Connector/Connector.mdp" />
-    <Entry filename="./Messenger/Messenger.mdp" />
-    <Entry filename="./Statusor/Statusor.mdp" />
-    <Entry filename="./Relater/Relater.mdp" />
-    <Entry filename="./Cryptor/Cryptor.mdp" />
+    <Entry filename="Lagger/Lagger.mdp" />
+    <Entry filename="Connector/Connector.mdp" />
+    <Entry filename="Messenger/Messenger.mdp" />
+    <Entry filename="Statusor/Statusor.mdp" />
+    <Entry filename="Relater/Relater.mdp" />
+    <Entry filename="Cryptor/Cryptor.mdp" />
   </Entries>
 </Combine>

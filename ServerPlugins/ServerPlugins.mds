@@ -20,9 +20,9 @@
     <Execute type="None" entry="UserChat" />
   </StartMode>
   <Entries>
-    <Entry filename="./Greeter/Greeter.mdp" />
-    <Entry filename="./UserManager/UserManager.mdp" />
-    <Entry filename="./CryptManager/CryptManager.mdp" />
-    <Entry filename="./UserChat/UserChat.mdp" />
+    <Entry filename="Greeter/Greeter.mdp" />
+    <Entry filename="UserManager/UserManager.mdp" />
+    <Entry filename="CryptManager/CryptManager.mdp" />
+    <Entry filename="UserChat/UserChat.mdp" />
   </Entries>
 </Combine>

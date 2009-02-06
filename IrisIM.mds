@@ -26,11 +26,11 @@
     <Execute type="None" entry="ClientPlugins" />
   </StartMode>
   <Entries>
-    <Entry filename="./Server/Server.mdp" />
-    <Entry filename="./Utilities/Utilities.mdp" />
-    <Entry filename="./ServerPlugins/ServerPlugins.mds" />
-    <Entry filename="./Client/Client.mdp" />
-    <Entry filename="./ClientUI/ClientUI.mdp" />
-    <Entry filename="./ClientPlugins/ClientPlugins.mds" />
+    <Entry filename="Server/Server.mdp" />
+    <Entry filename="Utilities/Utilities.mdp" />
+    <Entry filename="ServerPlugins/ServerPlugins.mds" />
+    <Entry filename="Client/Client.mdp" />
+    <Entry filename="ClientUI/ClientUI.mdp" />
+    <Entry filename="ClientPlugins/ClientPlugins.mds" />
   </Entries>
 </Combine>

@@ -1,59 +1,59 @@
-<Project name="Utilities" fileversion="2.0" language="C#" ctype="DotNetProject">
+<Project name="Utilities" fileversion="2.0" language="C#" clr-version="Net_2_0" ctype="DotNetProject">
   <Configurations active="Debug">
     <Configuration name="Debug" ctype="DotNetProjectConfiguration">
-      <Output directory="./bin/Debug" assembly="Utilities" />
+      <Output directory="bin/Debug" assembly="Utilities" />
       <Build debugmode="True" target="Library" />
-      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
       <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
     </Configuration>
     <Configuration name="Release" ctype="DotNetProjectConfiguration">
-      <Output directory="./bin/Release" assembly="Utilities" />
+      <Output directory="bin/Release" assembly="Utilities" />
       <Build debugmode="False" target="Exe" />
-      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
       <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
     </Configuration>
   </Configurations>
+  <Contents>
+    <File name="Access.cs" subtype="Code" buildaction="Compile" />
+    <File name="Logger.cs" subtype="Code" buildaction="Compile" />
+    <File name="Transceiver.cs" subtype="Code" buildaction="Compile" />
+    <File name="Exceptions" subtype="Directory" buildaction="Compile" />
+    <File name="Exceptions/IrisIMException.cs" subtype="Code" buildaction="Compile" />
+    <File name="Exceptions/FatalException.cs" subtype="Code" buildaction="Compile" />
+    <File name="ByteHolder.cs" subtype="Code" buildaction="Compile" />
+    <File name="Exceptions/FailedConnection.cs" subtype="Code" buildaction="Compile" />
+    <File name="Exceptions/ItemNotFound.cs" subtype="Code" buildaction="Compile" />
+    <File name="Exceptions/FailedConversion.cs" subtype="Code" buildaction="Compile" />
+    <File name="Plugin.cs" subtype="Code" buildaction="Compile" />
+    <File name="PluginManager.cs" subtype="Code" buildaction="Compile" />
+    <File name="Message.cs" subtype="Code" buildaction="Compile" />
+    <File name="IController.cs" subtype="Code" buildaction="Compile" />
+    <File name="Configurator.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents" subtype="Directory" buildaction="Compile" />
+    <File name="MessageContents/MessageContent.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/Plugins.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/BasicContent.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/ComplexContent.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/Unknown.cs" subtype="Code" buildaction="Compile" />
+    <File name="Exceptions/NullException.cs" subtype="Code" buildaction="Compile" />
+    <File name="Exceptions/UnknownType.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/Chat.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/Event.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/Response.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/Command.cs" subtype="Code" buildaction="Compile" />
+    <File name="Exceptions/KeyExists.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/PluginInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="Delegates" subtype="Directory" buildaction="Compile" />
+    <File name="Delegates/Delegates.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/Information.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessageContents/Part.cs" subtype="Code" buildaction="Compile" />
+    <File name="MessagePump.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
   <DeploymentInformation strategy="File">
     <excludeFiles />
   </DeploymentInformation>
-  <Contents>
-    <File name="./Access.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Logger.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Transceiver.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Exceptions" subtype="Directory" buildaction="Compile" />
-    <File name="./Exceptions/IrisIMException.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Exceptions/FatalException.cs" subtype="Code" buildaction="Compile" />
-    <File name="./ByteHolder.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Exceptions/FailedConnection.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Exceptions/ItemNotFound.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Exceptions/FailedConversion.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Plugin.cs" subtype="Code" buildaction="Compile" />
-    <File name="./PluginManager.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Message.cs" subtype="Code" buildaction="Compile" />
-    <File name="./IController.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Configurator.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents" subtype="Directory" buildaction="Compile" />
-    <File name="./MessageContents/MessageContent.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/Plugins.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/BasicContent.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/ComplexContent.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/Unknown.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Exceptions/NullException.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Exceptions/UnknownType.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/Chat.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/Event.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/Response.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/Command.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Exceptions/KeyExists.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/PluginInfo.cs" subtype="Code" buildaction="Compile" />
-    <File name="./Delegates" subtype="Directory" buildaction="Compile" />
-    <File name="./Delegates/Delegates.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/Information.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessageContents/Part.cs" subtype="Code" buildaction="Compile" />
-    <File name="./MessagePump.cs" subtype="Code" buildaction="Compile" />
-  </Contents>
-  <References>
-    <ProjectReference type="Gac" localcopy="True" refto="System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  </References>
 </Project>
